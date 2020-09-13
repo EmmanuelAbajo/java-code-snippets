@@ -13,7 +13,7 @@ public class RaceCondition {
 
 		ExecutorService executorService = Executors.newFixedThreadPool(10);
 		
-		for(int i = 0; i < 20; i++) {
+		for(int i = 0; i < 1000; i++) {
             executorService.submit(() -> car.increaseCount());
         }
 
@@ -37,7 +37,7 @@ class Vehicle {
 		this.count = count;
 	}
 
-	void increaseCount() {
+	synchronized void increaseCount() {
 		try {
 			System.out.println(Thread.currentThread().getName()+": start");
 			Thread.sleep(2000);
