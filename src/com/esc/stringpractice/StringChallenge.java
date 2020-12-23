@@ -7,12 +7,23 @@ public class StringChallenge {
 	// Assume string only contains letters and white space
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(noOfVowels(""));
+		String s1 = "HellO";
+		String s2 = " there is a quiet Mouse";
+		String s3 = " I am happy ";
+		System.out.println(noOfVowels(s2));
 
 	}
 	
 	public static int noOfVowels(String input) {
-		return 1;
+		String vowels = "aeiou";
+		String stdInput = input.toLowerCase().trim();
+		int vowelCount = 0;
+		for (char letter: stdInput.toCharArray()) {
+			if (vowels.contains(Character.toString(letter))) {
+				vowelCount++;
+			}
+		}
+		return vowelCount;
 	}
 	
 	public static int noOfConsonants(String input) {

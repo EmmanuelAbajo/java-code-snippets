@@ -20,7 +20,7 @@ public class StringChallengeTest {
 	void vowelsShouldBeCountedCorrectly() {
 		assertEquals(2, StringChallenge.noOfVowels(s1), "No of vowels must be 2");	
 		assertEquals(10,StringChallenge.noOfVowels(s2), "No of vowels must be 10");	
-		assertEquals(4,StringChallenge.noOfVowels(s3), "No of vowels must be 4");	
+		assertEquals(3,StringChallenge.noOfVowels(s3), "No of vowels must be 4");	
 	}
 	
 	@Test
