@@ -10,7 +10,7 @@ public class StringChallenge {
 		String s1 = "HellO";
 		String s2 = " there is a quiet Mouse";
 		String s3 = " I am happy ";
-		System.out.println(noOfVowels(s2));
+		System.out.println(noOfConsonants(s1));
 
 	}
 	
@@ -27,7 +27,15 @@ public class StringChallenge {
 	}
 	
 	public static int noOfConsonants(String input) {
-		return 1;
+		String vowels = "aeiou";
+		String stdInput = input.toLowerCase().trim();
+		int consonantCount = 0;
+		for (char letter: stdInput.toCharArray()) {
+			if (!vowels.contains(Character.toString(letter)) && !Character.toString(letter).equals(" ") ) {
+				consonantCount++;
+			}
+		}
+		return consonantCount;
 	}
 
 }
