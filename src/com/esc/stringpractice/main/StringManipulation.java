@@ -1,6 +1,24 @@
 package com.esc.stringpractice.main;
 
+import java.util.Stack;
+
 public class StringManipulation {
+	
+	static String reverseStringWithStack(String input) {
+		StringBuffer buffer =  new StringBuffer();
+		Stack<Character> stack  = new Stack<>();
+		
+		for (char i: input.toCharArray()) {
+			stack.push(i);
+		}
+		
+		
+		while (!stack.empty()) {
+			buffer.append(stack.pop());
+		}
+		
+		return buffer.toString();
+	}
 	
 	static String reverseString(String input) {
 		StringBuffer buffer =  new StringBuffer();
