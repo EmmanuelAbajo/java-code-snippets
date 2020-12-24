@@ -1,4 +1,4 @@
-package com.esc.stringpractice;
+package com.esc.stringpractice.main;
 
 public class StringManipulation {
 	

@@ -1,9 +1,11 @@
-package com.esc.stringpractice;
+package com.esc.stringpractice.test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+
+import com.esc.stringpractice.main.StringChallenge;
 
 public class StringChallengeTest {
 	
