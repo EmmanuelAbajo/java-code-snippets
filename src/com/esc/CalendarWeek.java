@@ -78,6 +78,7 @@ public class CalendarWeek {
 
 		// For the current year, Print out weeks of the year till current week with date intervals
 		weeks.forEach(week -> System.out.println("Current week: " + week));
+	
 
 	}
 
