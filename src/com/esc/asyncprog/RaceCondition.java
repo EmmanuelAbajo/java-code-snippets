@@ -27,6 +27,7 @@ public class RaceCondition {
 
 class Vehicle {
 
+	// Read and write operations to an int is atomic
 	private int count;
 
 	int getCount() {
@@ -46,9 +47,5 @@ class Vehicle {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-	}
-
-	void logValue(String name, int i) {
-		System.out.println(name + ": " + i);
 	}
 }
